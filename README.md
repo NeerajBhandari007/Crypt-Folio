@@ -5,8 +5,10 @@ Crypto Folio is a web application made using HTML, CSS, and JavaScript. It provi
 The website features smooth animations and interactive elements to enhance user experience. It is currently optimized for desktop screens and mobile screens with a width of 400 pixels. However, it may not function properly on other mobile screen sizes or larger screens.
 
 To contact us, we have used Google Sheets as the backend to receive user queries and feedback. You can find the link to the contact form on the homepage.
+
 ## Demo
-https://crypt-folio.netlify.app/
+Here is a working live demo - https://crypt-folio.netlify.app/
+
 ## Features
 
 - Real-time data and updates on the cryptocurrency market
