@@ -1,0 +1,2310 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+
+.main {
+  /* position: fixed; */
+  background-color: black;
+  width: 93%;
+  height: 600px;
+  -ms-transform: skewY(-20deg);
+  -webkit-transform: skewY(-20deg);
+  transform: skewY(-17deg);
+  border-radius: 50px;
+  position: absolute;
+  top: 0px;
+  left: 90px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  overflow-x: hidden;
+}
+.sidenav {
+  display: none;
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.expand {
+  display: none;
+}
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+nav ul {
+  position: relative;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  justify-content: space-evenly;
+}
+.logo {
+  margin-top: 25px;
+  margin-left: 140px;
+  width: 75%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+nav ul li {
+  position: relative;
+  width: auto;
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+}
+nav ul a:hover {
+  color: rgb(0, 160, 112);
+}
+
+.middle {
+  display: flex;
+  height: 680px;
+}
+.secLeft {
+  position: relative;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.secLeft .head {
+  font-size: 2.4rem;
+  padding: 140px 140px;
+  padding-bottom: 10px;
+  color: white;
+  line-height: 3rem;
+  padding-right: 0px;
+  max-width: 500px;
+}
+
+.secLeft .middle {
+  font-size: 1rem;
+  padding: 0 140px;
+  color: rgb(194, 202, 207);
+  line-height: 1.6rem;
+  height: 110px;
+  padding-right: 0px;
+  max-width: 500px;
+}
+.secLeft button {
+  margin-top: 50px;
+  margin-left: 140px;
+  height: 45px;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 1.3rem;
+  background-color: rgb(0, 160, 112);
+  color: white;
+}
+.secRight {
+  position: relative;
+  max-width: 50%;
+  overflow: hidden;
+}
+.secRight .hand {
+  max-width: 90%;
+  position: absolute;
+  margin-top: 240px;
+  margin-left: 130px;
+  float: right;
+  width: 680px;
+  max-height: 700px;
+  z-index: 2;
+}
+.coin {
+  /* animation: view; */
+  /* animation-duration: 16s; */
+  /* opacity: 0; */
+  opacity: 1;
+  /* animation-delay: 3.8s; */
+  /* animation-fill-mode: forwards; */
+}
+@keyframes view {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.secRight .bit {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 175px;
+  left: 120px;
+  /* animation: upbit 3s linear 2.2s 1 normal, bitcoin 4s linear 4.8s infinite; */
+  animation: bitcoin 4s linear infinite;
+  z-index: 2;
+}
+.secRight .eth {
+  position: absolute;
+  height: 125px;
+  width: 125px;
+  top: 90px;
+  left: 300px;
+  /* animation: upe 3s linear 2.2s 1 normal, ethereum 4s linear 4.8s infinite; */
+  animation: ethereum 4s linear infinite;
+  z-index: 2;
+}
+.secRight .bin {
+  position: absolute;
+  height: 95px;
+  width: 95px;
+  top: 100px;
+  left: 210px;
+  /* animation: upb 3s linear 2.2s 1 normal, binance 4s linear 4.8s infinite; */
+  animation: binance 4s linear infinite;
+  z-index: 2;
+}
+.secRight .lite {
+  position: absolute;
+  height: 95px;
+  width: 95px;
+  top: 290px;
+  left: 240px;
+  /* animation: upl 3s linear 2.2s 1 normal, lite 4s linear 4.8s infinite; */
+  animation: lite 4s linear infinite;
+  z-index: 2;
+}
+.secRight .doge {
+  position: absolute;
+  height: 105px;
+  width: 105px;
+  top: 250px;
+  left: 330px;
+  /* animation: upd 3s linear 2.2s 1 normal, doge 4s linear 4.8s infinite; */
+  animation: doge 4s linear infinite;
+  z-index: 2;
+}
+@keyframes lite {
+  0% {
+    top: 290px;
+    transform: rotateY(0deg);
+  }
+  50% {
+    top: 230px;
+    transform: rotateY(20deg);
+  }
+  100% {
+    top: 290px;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes upl {
+  0% {
+    top: 420px;
+    left: 280px;
+    transform: scale(0);
+  }
+  100% {
+    top: 290px;
+    left: 240px;
+    transform: scale(1);
+  }
+}
+@keyframes doge {
+  0% {
+    top: 250px;
+    transform: rotateY(0deg);
+  }
+  50% {
+    top: 210px;
+    transform: rotateY(20deg);
+  }
+  100% {
+    top: 250px;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes upd {
+  0% {
+    top: 420px;
+    left: 280px;
+    transform: scale(0);
+  }
+  100% {
+    top: 250px;
+    left: 330px;
+    transform: scale(1);
+  }
+  /* 0%{transform:scale(0)}
+  100%{transform:scale(1)} */
+}
+@keyframes bitcoin {
+  0% {
+    top: 175px;
+    transform: rotateY(0deg);
+  }
+  50% {
+    top: 210px;
+    transform: rotateY(20deg);
+  }
+  100% {
+    top: 175px;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes upbit {
+  0% {
+    top: 420px;
+    left: 280px;
+    transform: scale(0);
+  }
+  100% {
+    top: 175px;
+    left: 120px;
+    transform: scale(1);
+  }
+}
+@keyframes ethereum {
+  0% {
+    top: 90px;
+    transform: rotateY(0deg);
+  }
+  25% {
+    top: 60px;
+    transform: rotateY(0deg);
+  }
+  75% {
+    top: 130px;
+    transform: rotateY(20deg);
+  }
+  100% {
+    top: 90px;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes upe {
+  0% {
+    top: 420px;
+    left: 280px;
+    transform: scale(0);
+  }
+  100% {
+    top: 90px;
+    left: 320px;
+    transform: scale(1);
+  }
+}
+@keyframes binance {
+  0% {
+    top: 100px;
+    transform: rotateY(0deg);
+  }
+  50% {
+    top: 60px;
+    transform: rotateY(20deg);
+  }
+  100% {
+    top: 100px;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes upb {
+  0% {
+    top: 420px;
+    left: 280px;
+    transform: scale(0);
+  }
+  100% {
+    top: 100px;
+    left: 210px;
+    transform: scale(1);
+  }
+}
+
+p span {
+  color: rgb(0, 160, 112);
+}
+.over {
+  position: absolute;
+  width: 0;
+  height: 100;
+  border-left: 230px solid transparent;
+  border-right: 230px solid transparent;
+  border-top: 500px solid rgba(42, 76, 110, 0.075);
+  top: 30px;
+  left: 90px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  animation: flick 0.2s 8;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+  opacity: 0;
+}
+
+@keyframes flick {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#livehead {
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.live {
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  overflow: hidden;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.table_load {
+  width: 100%;
+}
+.loader {
+  color: rgb(0, 160, 112);
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+.load_main{
+  height: 800px;
+}
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em,
+      -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em,
+      -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+      -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+      -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+      -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+      -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em,
+      -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em,
+      -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+      -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+      -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+      -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+      -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.primary .topcard p,
+.secondary .topcard p {
+  width: 100%;
+  /* font-size: 2rem; */
+  text-align: center;
+}
+.topcard p img {
+  height: 40px;
+  width: 40px;
+}
+
+.scroll-parent {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  display: flex;
+  align-items: center;
+  width: inherit;
+  height: 8rem;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: primary 15s linear infinite;
+}
+.topcard {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.primary {
+  animation: primary 15s linear infinite;
+}
+
+.secondary {
+  animation: secondary 15s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+#chart {
+  margin-top: 50px;
+  max-width: 85%;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  border-bottom: 4px solid rgba(243, 243, 243, 0.514);
+}
+table {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+table th,
+table td {
+  width: fit-content;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.436);
+  /* border-bottom: 2px solid black; */
+}
+
+table th {
+  color: white;
+  background-color: black;
+}
+table td {
+  color: black;
+  padding: 20px 0px;
+  width: 800px;
+}
+tr.profit:hover {
+  background-color: rgb(0, 160, 112);
+}
+tr.loss:hover {
+  background-color: rgb(219, 53, 53);
+}
+.imgmain {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+.imgmain p a {
+  color: #000000;
+}
+td img {
+  height: 20px;
+  width: 20px;
+  padding-right: 10px;
+}
+/* table tr {
+  transform: translateX(101%);
+  transition: all 0.6s ease-in-out;
+}
+table tr.slide-in {
+  transform: translateX(0px);
+
+} */
+
+.more {
+  margin-top: 40px;
+  border-radius: 50px;
+  width: 120px;
+  height: 35px;
+  background-color: rgb(0, 160, 112);
+  color: white;
+  padding: 5px;
+  font-size: 1.02rem;
+}
+#wallet {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  margin-top: 50px;
+  height: 600px;
+  color: white;
+  display: flex;
+  z-index: 2;
+  border-bottom: 4px solid rgba(243, 243, 243, 0.514);
+  margin-bottom: 50px;
+  /* margin-left: 50px; */
+}
+#wallet .left {
+  z-index: 1;
+  width: 40%;
+  margin-left: 50px;
+  padding-top: 50px;
+  padding-left: 80px;
+  margin-top: 200px;
+  font-size: 1.5rem;
+  /* padding-right: 200px; */
+  line-height: 35px;
+}
+#wallet button {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  max-width: 200px;
+  color: white;
+  background-color: rgb(0, 160, 112);
+}
+#wallet .wall {
+  position: relative;
+  width: 41%;
+  /* margin-left: 50px; */
+  overflow: hidden;
+}
+.leftcircle {
+  position: absolute;
+  background-color: black;
+  width: 42%;
+  height: 400px;
+  z-index: 3;
+  left: 90px;
+  top: 100px;
+  z-index: 0;
+  border-radius: 59% 41% 48% 52% / 45% 47% 53% 55%;
+}
+.rightcircle {
+  position: absolute;
+  background-color: black;
+  width: 30%;
+  height: 380px;
+  z-index: 0;
+  right: 110px;
+  z-index: 0;
+  top: 90px;
+  outline: 2px dashed black;
+  outline-offset: 15px;
+  border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
+}
+.wall .phone {
+  position: relative;
+  /* left: 20px; */
+  max-width: 340px;
+  max-height: 550px;
+  float: right;
+}
+.wall .bit {
+  position: relative;
+  top: 400px;
+  left: 170px;
+  width: 200px;
+  height: 200px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+
+  border-bottom: 4px solid rgba(243, 243, 243, 0.514);
+}
+
+.headi {
+  margin-top: 100px;
+  width: 100%;
+  margin-bottom: 50px;
+  color: rgb(65, 65, 65);
+  font-weight: 600;
+}
+.cards p {
+  width: 95%;
+  line-height: 2rem;
+  color: grey;
+}
+.points {
+  margin-left: 20px;
+  padding-bottom: 80px;
+  /* overflow: hidden; */
+}
+.state {
+  margin-bottom: 40px;
+}
+.line {
+  padding-bottom: 100px;
+  border-bottom: 4px solid rgba(243, 243, 243, 0.514);
+}
+.card1 {
+  width: 70%;
+}
+.card2 {
+  width: 80%;
+}
+.maincard {
+  margin-top: 150px;
+  position: relative;
+  min-height: fit-content;
+  max-width: 100%;
+}
+.firstcol,
+.seccol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.maincard .firstcol div,
+.maincard .seccol div {
+  max-width: 450px;
+  height: 350px;
+  color: rgb(217, 213, 213);
+  display: flex;
+  position: relative;
+  background-color: black;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.first p,
+.second p,
+.third p,
+.forth p {
+  padding-top: 20px;
+  padding: 0 70px;
+  font-size: 1.1rem;
+}
+.first p,
+.second p {
+  padding-top: 50px;
+}
+.mainchead {
+  margin: 0 auto;
+  font-size: 1.75rem;
+  max-width: 720px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.mainchead span {
+  color: rgb(0, 160, 112);
+}
+.i {
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+  padding-bottom: 20px;
+  color: rgb(0, 160, 112);
+}
+.third,
+.forth {
+  padding-top: 50px;
+}
+.userbox {
+  height: 600px;
+  background-color: #000000;
+}
+.users {
+  margin: 100px 0px;
+  color: white;
+  height: 400px;
+  max-width: 100%;
+  display: flex;
+  background-image: url("../image/earth.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
+.users .mains {
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 150px;
+}
+.users .mains p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.users .outer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  margin-top: 110px;
+  align-items: center;
+}
+.o1,
+.o2 {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+}
+.in1,
+.in2,
+.in3,
+.in4 {
+  display: flex;
+  flex-direction: column;
+}
+.o1 {
+  margin-bottom: 70px;
+}
+.money {
+  font-size: 1.7rem;
+  padding-top: 10px;
+  font-weight: 700;
+}
+.wrapper {
+  background: white;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel__item {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 90%;
+  padding: 0 12px;
+  opacity: 0;
+  filter: drop-shadow(0 2px 2px #555);
+  will-change: transform, opacity;
+  -webkit-animation: carousel-animate-vertical 27s linear infinite;
+  animation: carousel-animate-vertical 27s linear infinite;
+}
+
+.carousel__item:nth-child(1) {
+  -webkit-animation-delay: calc(3s * -1);
+  animation-delay: calc(3s * -1);
+}
+
+.carousel__item:nth-child(2) {
+  -webkit-animation-delay: calc(3s * 0);
+  animation-delay: calc(3s * 0);
+}
+
+.carousel__item:nth-child(3) {
+  -webkit-animation-delay: calc(3s * 1);
+  animation-delay: calc(3s * 1);
+}
+
+.carousel__item:nth-child(4) {
+  -webkit-animation-delay: calc(3s * 2);
+  animation-delay: calc(3s * 2);
+}
+
+.carousel__item:nth-child(5) {
+  -webkit-animation-delay: calc(3s * 3);
+  animation-delay: calc(3s * 3);
+}
+
+.carousel__item:nth-child(6) {
+  -webkit-animation-delay: calc(3s * 4);
+  animation-delay: calc(3s * 4);
+}
+
+.carousel__item:nth-child(7) {
+  -webkit-animation-delay: calc(3s * 5);
+  animation-delay: calc(3s * 5);
+}
+
+.carousel__item:nth-child(8) {
+  -webkit-animation-delay: calc(3s * 6);
+  animation-delay: calc(3s * 6);
+}
+
+.carousel__item:last-child {
+  -webkit-animation-delay: calc(-3s * 2);
+  animation-delay: calc(-3s * 2);
+}
+
+.carousel__item-head {
+  border-radius: 50%;
+  background-color: #d7f7fc;
+  width: 90px;
+  height: 90px;
+  padding: 14px;
+  position: relative;
+  margin-right: -45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.carousel__item-body {
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  border-radius: 15px;
+  padding: 16px 20px 16px 70px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 10px;
+}
+@-webkit-keyframes carousel-animate-vertical {
+  0% {
+    transform: translateY(100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  3%,
+  11.1111111111% {
+    transform: translateY(100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  14.1111111111%,
+  22.2222222222% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  25.2222222222%,
+  33.3333333333% {
+    transform: translateY(-100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  36.3333333333% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes carousel-animate-vertical {
+  0% {
+    transform: translateY(100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  3%,
+  11.1111111111% {
+    transform: translateY(100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  14.1111111111%,
+  22.2222222222% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  25.2222222222%,
+  33.3333333333% {
+    transform: translateY(-100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  36.3333333333% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+button {
+  cursor: pointer;
+}
+#msg {
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 15px;
+  color: rgb(0, 160, 112);
+}
+.phoner {
+  display: none;
+}
+.test {
+  position: relative;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 50px;
+  font-weight: 700;
+  color: rgb(0, 160, 112);
+}
+.testbody {
+  position: relative;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  /* padding-bottom: 40px; */
+}
+.section {
+  position: relative;
+}
+/* .tleft{
+  position: absolute;
+  background-color: black;
+  height:300px;
+  width:400px;
+  top:10px;
+  left:-100px;
+  border-radius:46% 76% 100% 36% / 48% 71% 61% 48% ;
+}
+.tright{
+  position: absolute;
+  background-color: black;
+  height:300px;
+  width:400px;
+  bottom:10px;
+  right:-100px;
+  border-radius:46% 76% 100% 36% / 48% 71% 61% 48% ;
+} */
+
+footer {
+  min-height: 680px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+#headf {
+  padding-top: 40px;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(0, 160, 112);
+}
+.icon i {
+  cursor: pointer;
+}
+.down {
+  width: 150px;
+  font-size: 1.5rem;
+  color: rgb(0, 160, 112);
+}
+.email {
+  display: flex;
+  flex-direction: row;
+}
+.etitle {
+  width: 40%;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.efoot {
+  margin-right: 20px;
+  margin-left: 30px;
+  font-size: 1.5rem;
+  color: rgb(0, 160, 112);
+}
+.ebox {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px;
+  padding-top: 50px;
+}
+input {
+  padding: 5px;
+  width: 60%;
+  margin-bottom: 25px;
+}
+input:focus {
+  outline: none;
+  box-shadow: rgba(0, 160, 112, 0.4) 0px 0px 0px 2px,
+    rgba(0, 160, 112, 0.65) 0px 4px 6px -1px,
+    rgba(0, 160, 112, 0.08) 0px 1px 0px inset;
+}
+textarea {
+  padding: 5px;
+  width: 60%;
+  height: 100px;
+  margin-bottom: 25px;
+}
+textarea:focus {
+  outline: none;
+  box-shadow: rgba(0, 160, 112, 0.4) 0px 0px 0px 2px,
+    rgba(0, 160, 112, 0.65) 0px 4px 6px -1px,
+    rgba(0, 160, 112, 0.08) 0px 1px 0px inset;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bfoot {
+  width: 120px;
+  background-color: rgb(0, 160, 112);
+  padding: 6px;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.1rem;
+}
+.last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lasthead {
+  margin-top: 40px;
+  color: rgb(0, 160, 112);
+  font-size: 1.4rem;
+  padding: 10px 0px;
+  font-weight: 700;
+  text-align: center;
+}
+.lastpara {
+  width: 70%;
+  color: rgba(243, 243, 243, 0.635);
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+.lastp {
+  color: rgba(243, 243, 243, 0.635);
+  font-size: 0.8rem;
+  text-align: center;
+}
+.logoa {
+  color: white;
+  padding-left: 40px;
+  font-weight: 800;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.logoa a {
+  font-size: 1.5rem;
+}
+.ul li a {
+  /* margin-bottom: 5px; */
+  color: white;
+}
+.nav {
+  background-color: #000000;
+}
+.tablea {
+  width: 90%;
+  margin-bottom: 10px;
+}
+.headac {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 50px 0px;
+  text-align: center;
+}
+.btall {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.btall button {
+  width: 10%;
+  margin: 0px 40px;
+  background-color: rgb(0, 160, 112);
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+thead {
+  width: 100%;
+}
+thead tr > th {
+  width: 400px;
+}
+.foot {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 1300px) {
+  .secLeft .head {
+    padding-left: 110px;
+  }
+  .secLeft button {
+    margin-left: 110px;
+  }
+  .secLeft .middle {
+    padding-left: 110px;
+    max-width: 80%;
+    height: 110px;
+  }
+  .main {
+    left: 71px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .logoa {
+    width: 60%;
+  }
+  .logo {
+    margin-left: 60px;
+    width: 58%;
+    margin-top: 10px;
+  }
+  .middle {
+    flex-direction: column;
+  }
+  .secLeft {
+    max-width: 100%;
+  }
+  .secLeft .head {
+    max-width: 600px;
+    margin-bottom: 10px;
+    padding-top: 110px;
+    height:100px;
+  }
+  .secLeft button{
+    margin-top: 0px;
+  }
+  .main {
+    left: 57px;
+    height: 520px;
+  }
+  .maincard .firstcol div,
+  .maincard .seccol div {
+    max-width: 350px;
+  }
+  #chart {
+    max-width: 100%;
+    padding-left: 0px;
+  }
+  table {
+    max-width: 90%;
+  }
+  .card1 {
+    width: 80%;
+  }
+  .users .mains p {
+    max-width: 350px;
+  }
+  .leftcircle {
+    left: 30px;
+    width: 46%;
+    height: 350px;
+    top: 150px;
+  }
+  #wallet .left {
+    padding-left: 20px;
+  }
+  .rightcircle {
+    right: 40px;
+    width: 300px;
+    height: 300px;
+    top: 130px;
+  }
+  .wall .phone {
+    left: 15px;
+  }
+  #wallet .wall {
+    width: 48%;
+  }
+  .secRight {
+    margin-left: 220px;
+    max-width: 100%;
+    display: block;
+    height: 650px;
+  }
+  .secRight .hand {
+    max-width: 690px;
+    height: 380px;
+    margin-top: 250px;
+    left: 0px;
+  }
+  .middle {
+    height: 1050px;
+  }
+  .etitle {
+    padding-left: 40px;
+  }
+  .ebox {
+    padding: 0px;
+    padding-top: 50px;
+  }
+  .lastpara {
+    text-align: center;
+  }
+}@media only screen and (max-width: 890px) {
+  .secRight{
+    margin-left: 120px;
+  }
+}
+@media only screen and (max-width: 750px) {
+
+  .main{
+
+    left:10px;
+    width:98%;
+    transform: skewY(-16deg);
+    top:-10px;
+  }
+  nav .logo {
+    width: 80%;
+    padding: 14px 0px;
+    margin: 0px;
+    font-size: 1.98rem;
+    padding-left: 190px;
+    z-index: 1;
+    color: white;
+    mix-blend-mode: difference;
+  }
+  .expand {
+    display: block;
+    color: black;
+    font-size: 1.98rem;
+    font-weight: 900;
+    width: 40px;
+    padding-left: 20px;
+  }
+  nav ul {
+    display: none;
+}
+.secLeft{
+  align-items: center;
+  justify-content: center;
+}
+.secLeft .head{
+  padding-left: 0px;
+  font-size: 1.8rem;
+  /* text-align: center; */
+  height:60px;
+  max-width:fit-content
+}
+.secLeft .middle{
+  padding-left: 0px;
+  font-size: 0.9rem;
+  height: 120px;
+  text-align: center;
+
+}
+.secLeft button{
+  margin-left: 0px;
+  margin-top:10px;
+  font-size: 1.3rem;
+}
+.secRight{
+  margin-left: 0px;
+}
+.secRight .hand{
+  max-width: 420px;
+  height:290px;
+  margin-left: 180px;
+  margin-top:250px;
+}
+.secRight .bin{
+  height:75px;
+  width:75px;
+}
+.secRight .eth{
+  height:100px;
+  width:100px;
+}
+.secRight .bit{
+  height:110px;
+  width:110px;
+  left:170px;
+}
+.secRight .lite{
+  height:75px;
+  width:75px;
+  left:270px;
+}
+.secRight .doge{
+  height:85px;
+  width:85px;
+  left:350px;
+}
+.maincard{
+  margin-top:0px;
+}
+.mainchead{
+  font-size: 1.5rem;
+}
+.firstcol, .seccol{
+  flex-direction: column;
+
+  align-items: center;
+}
+.first p, .second p, .third p, .forth p{
+  padding:30px;
+  font-size: 1rem;
+}
+.third, .forth{
+  padding-top: 0px;
+}
+.maincard .firstcol div, .maincard .seccol div{
+  height:320px;
+}
+#wallet{
+  justify-content: center;
+  align-items: center;
+  height:560px;
+  margin: 0px;
+}
+.wall{
+  display: none;
+}
+.leftcircle{
+  display: none;
+}
+.rightcircle{
+  display: none;
+}
+
+#wallet .left{
+  padding: 0px;
+  padding-left: 0px;
+  text-align: center;
+  width: 300px;
+  margin: 0px;
+  height: 300px;
+  font-size: 1.2rem;
+  background-color: black;
+  border-radius: 100%;
+  outline: dashed 2px black;
+  outline-offset: 20px;
+  animation: spin 14s linear 0s infinite;
+}
+#wallet .left p{
+  margin-top: 70px;
+
+}
+.card1,.card2{
+  width: 90%;
+}
+.headi{
+  font-size: 1.6rem;
+  margin-top: 30px;
+}
+.users{
+  flex-direction: column;
+}
+.users .mains{
+  width:100%;
+  height:300px;
+  font-size: 1.4rem;
+  margin: 0px;
+  padding-top: 50px;
+}
+.users .outer{
+  margin: 0px;
+  width:100%;
+  height:600px;
+  font-size: 1rem;
+  align-items: center;
+  text-align: center;
+}
+.o1,.o2{
+  margin-bottom: 40px;
+  width:70%;
+}
+.money{
+  font-size: 1.4rem;
+}
+.testbody{
+  font-size: 1.4rem;
+}
+.email{
+  flex-direction: column;
+}
+.etitle{
+  margin-top:40px;
+  width: 100%;
+  padding:0px;
+}
+.ebox{
+  width: 100%;
+  padding-top: 40px;
+}
+.nav{
+  height:70px;
+}
+.logoa{
+  width:100%;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 40px;
+}
+.cexpand{
+  color: white;
+  display: block;
+  font-size: 1.98rem;
+  font-weight: 900;
+  width: 40px;
+  padding-left: 5px;
+}
+.sidenav {
+  display: block;
+  height: 0;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  /* bottom: 0; */
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3rem;
+  width: max-content;
+}
+.btall button{
+  width: 20%;
+}
+}
+@media only screen and (max-width: 630px) {
+  nav .logo{
+    padding-left: 130px;
+  }
+  .main{
+    top:0px;
+    transform: skewY(-15deg);
+  }
+  .secRight .hand{
+    margin-left: 120px;
+  }
+  .secRight .bin{
+    left:140px;
+  }
+  .secRight .eth{
+    left:240px;
+  }
+  .secRight .bit{
+    left:100px;
+  }
+  .secRight .lite{
+
+    left:190px;
+  }
+  .secRight .doge{
+    left:260px;
+  }
+  .secLeft .head{
+    font-size: 1.5rem;
+  }
+  .secLeft .middle{
+    font-size: 0.8rem;
+  }
+  .lastpara{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  * {
+    /* outline: 2px solid red; */
+    font-size: 0.8rem;
+    overflow-x: hidden;
+    z-index: 0;
+  }
+  #msg {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: rgb(0, 160, 112);
+  }
+  .secLeft {
+    margin-top: 10px;
+    height: 250px;
+    max-width: 100%;
+  }
+  .secRight {
+    margin-left: 80px;
+    max-width: 100%;
+    /* display: none; */
+    display: block;
+    height: 350px;
+  }
+  #wallet {
+    height: 300px;
+  }
+  #wallet .wall {
+    display: none;
+    width: 0%;
+    padding-left: 0px;
+    width: 50%;
+  }
+  .wall .phone {
+    width: 110px;
+    /* padding-left:60px; */
+    left: -20px;
+    top: 50px;
+  }
+  .rightcircle {
+    display: none;
+    top: 100px;
+    width: 0;
+    height: 0;
+  }
+  #wallet .left{
+    animation: none;
+    background-color: transparent;
+    outline: none;
+  }
+  .leftcircle {
+    display: block;
+    top: 30px;
+    width: 250px;
+    height: 250px;
+    left: 70px;
+    outline: dashed 2px black;
+    outline-offset: 10px;
+    border-radius: 50%;
+    animation: spin 14s linear 0s infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #wallet .left {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 4px solid rgba(243, 243, 243, 0.514);
+  }
+  #wallet .left p{
+    margin-top: 95px;
+  }
+  .wall .bit {
+    display: none;
+    width: 80px;
+    height: 80px;
+    top: 180px;
+    left: 35px;
+  }
+  .userbox {
+    margin-top: 120px;
+  }
+  .headi span {
+    font-size: 1.9rem;
+  }
+  #livehead span {
+    font-size: 1.8rem;
+  }
+  #wallet button {
+    font-size: 1.2rem;
+    margin: 0px;
+    margin-top: 10px;
+    width: 90px;
+  }
+  .testbody {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  .etitle {
+    padding: 0px;
+    width: 50%;
+  }
+  .ebox {
+    width: 50%;
+    padding: 0px;
+    padding-top: 10px;
+  }
+  input {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+  textarea {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+  .lasthead {
+    margin-top: 0px;
+  }
+  #livehead {
+    font-size: 1.8rem;
+    margin-top: 70px;
+  }
+  footer {
+    min-height: fit-content;
+  }
+  .efoot {
+    margin: 0px 10px;
+  }
+  .foot{
+    min-height: 190px;
+  }
+  .carousel__item {
+    width: 97%;
+  }
+  .headi {
+    margin-top: 10px;
+  }
+  .points {
+    margin-left: 10px;
+  }
+  .points p {
+    margin-bottom: 15px;
+  }
+  .cards p {
+    font-size: 1.2rem;
+  }
+  .imgmain {
+    padding-left: 0;
+  }
+  .card1,
+  .card2 {
+    width: 92%;
+  }
+  .more {
+    margin-top: 20px;
+
+  }
+  .more a{
+    font-size: 1.2rem;
+  }
+  table td {
+    padding: 20px 0px;
+    font-size: 0.9rem;
+  }
+  table th {
+    font-size: 1.2rem;
+    padding: 10px 0px;
+  }
+  .chart {
+    padding: 0px;
+    margin: 0px;
+  }
+  .topcard p img {
+    height: 30px;
+    width: 30px;
+  }
+  td img {
+    padding-right: 2px;
+    padding-left: 5px;
+  }
+  .maincard .firstcol div,
+  .maincard .seccol div {
+    max-height: 250px;
+    width: 80%;
+    border-radius: 10px;
+  }
+  .i {
+    font-size: 3rem;
+    padding-bottom: 5px;
+  }
+  .first p,
+  .second p,
+  .third p,
+  .forth p {
+    width: 100%;
+    padding: 0px;
+    padding: 20px 10px;
+    font-size: 1.23rem;
+  }
+  .third,
+  .forth {
+    padding: 0px;
+  }
+  .lastpara {
+    width: 85%;
+  }
+  .main {
+    height: 350px;
+    left: -30px;
+    top:5px;
+    width: 430px;
+    z-index: 0;
+    border-radius: 10px;
+    transform: skewY(-16deg);
+  }
+  .secLeft .head {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 1.8rem;
+    padding-top: 20px;
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  .left .head {
+    margin: 0 auto;
+    margin-top: 95px;
+    font-size: 1.5rem;
+    width: 200px;
+    line-height: normal;
+  }
+
+  .see p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .see .arr i {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .middle {
+    flex-direction: column;
+
+    height:690px;
+    width: 100%;
+  }
+  .secLeft .middle {
+    visibility: hidden;
+    position: relative;
+    font-size: 1.24rem;
+  }
+  .secLeft .middle::after {
+    content: "Revolutionize your crypto investments with our cutting-edge platform powered by real-time data and expert insights.";
+
+    visibility: visible;
+    position: absolute;
+    height: fit-content;
+    overflow: hidden;
+  }
+  .secLeft button {
+    margin: 0px;
+
+    width: 150px;
+  }
+  .secLeft button a {
+    font-size: 1.2rem;
+  }
+  .mainchead span {
+    font-size: 1.75rem;
+  }
+
+  .mainchead {
+    max-width: 350px;
+  }
+  .firstcol,
+  .seccol {
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+  }
+  .users {
+    flex-direction: column;
+  }
+
+  .users .mains p {
+    font-size: 1.5rem;
+  }
+  .users .outer {
+    margin-top:50px;
+  }
+  .in1 p,
+  .in2 p,
+  .in3 p,
+  .in4 p {
+    font-size: 1.4rem;
+    height:100px;
+  }
+  p span {
+    font-size: 1.2rem;
+  }
+  .head span {
+    font-size: 1.8rem;
+  }
+  .test {
+    font-size: 2.5rem;
+  }
+  .testbody {
+    font-size: 1.7rem;
+  }
+  .email {
+    flex-direction: column;
+  }
+  .etitle {
+    margin-top: 20px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .ebox {
+    width: 100%;
+  }
+  .over {
+    top: -30px;
+    left: 0px;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 300px solid rgba(42, 76, 110, 0.075);
+  }
+  .secRight .bin {
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    left: 130px;
+  }
+  @keyframes upb {
+    0% {
+      top: 230px;
+      left: 90px;
+      transform: scale(0);
+    }
+    100% {
+      top: 10px;
+      left: 130px;
+      transform: scale(1);
+    }
+  }
+  @keyframes binance {
+    0% {
+      top: 10px;
+      transform: rotateY(0deg);
+    }
+
+    50% {
+      top: 90px;
+      transform: rotateY(20deg);
+    }
+    100% {
+      top: 10px;
+      transform: rotateY(0deg);
+    }
+  }
+  .secRight .eth {
+    height: 65px;
+    width: 65px;
+    top: 20px;
+    left: 60px;
+  }
+
+  @keyframes ethereum {
+    0% {
+      top: 20px;
+      transform: rotateY(0deg);
+    }
+    50% {
+      top: 80px;
+      transform: rotateY(20deg);
+    }
+    100% {
+      top: 20px;
+      transform: rotateY(0deg);
+    }
+  }
+  .secRight .bit {
+    height: 75px;
+    width: 75px;
+    top: 110px;
+    left: 30px;
+  }
+  @keyframes bitcoin {
+    0% {
+      top: 110px;
+      transform: rotateY(0deg);
+    }
+    50% {
+      top: 150px;
+      transform: rotateY(20deg);
+    }
+    100% {
+      top: 110px;
+      transform: rotateY(0deg);
+    }
+  }
+  .secRight .lite {
+    height: 53px;
+    width: 53px;
+    top: 100px;
+    left: 155px;
+    animation: lite 4s linear infinite;
+  }
+  .secRight{
+    margin-left: 70px;
+  }
+  .secRight .hand {
+    max-width: 320px;
+    height: 210px;
+    margin-top: 160px;
+    left: 30px;
+    margin-left: 0px;
+  }
+  .secRight .doge {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 180px;
+    left: 95px;
+  }
+  @keyframes doge {
+    0% {
+      top: 180px;
+      transform: rotateY(0deg);
+    }
+    50% {
+      top: 140px;
+      transform: rotateY(20deg);
+    }
+    100% {
+      top: 180px;
+      transform: rotateY(0deg);
+    }
+  }
+  @keyframes lite {
+    0% {
+      top: 100px;
+      transform: rotateY(0deg);
+    }
+
+    50% {
+      top: 160px;
+      transform: rotateY(20deg);
+    }
+    100% {
+      top: 100px;
+      transform: rotateY(0deg);
+    }
+  }
+  nav ul {
+    display: none;
+  }
+  nav .logo {
+    width: 80%;
+    padding: 14px 0px;
+    margin: 0px;
+    font-size: 1.98rem;
+
+    padding-left: 70px;
+    z-index: 1;
+    color: white;
+  }
+  nav .logoa ,nav .logoa a,.logoa span{
+    font-size: 1.98rem;
+  }
+  .logo span {
+    font-size: 1.8rem;
+  }
+
+  .expand {
+    display: block;
+    color: black;
+    font-size: 1.98rem;
+    font-weight: 900;
+    width: 40px;
+    padding-left: 20px;
+  }
+  .sidenav {
+    display: block;
+    height: 0;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    /* bottom: 0; */
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2rem;
+    margin-left: 50px;
+    width: 100%;
+  }
+  .wrapper {
+    height: 0px;
+    display: none;
+  }
+  .phoner {
+    display: flex;
+    flex-direction: column;
+  }
+  .rev {
+    font-size: 1.1rem;
+    margin: 40px 0px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .rev1 {
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+  .f1 {
+    display: flex;
+  }
+  .rev2 {
+    position: relative;
+    right: -55px;
+  }
+  .rev span {
+    color: rgb(0, 160, 112);
+    font-size: 1.1rem;
+  }
+}
+ @media only screen and (max-width: 376px) {
+  .main{
+    width:365px
+  }
+  nav .logo{
+    font-size: 1.4rem;
+    padding-left: 60px;
+  }
+  nav .logo span{
+    font-size: 1.4rem;
+  }
+  .secLeft .head{
+    padding:0px;
+    height:50px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .expand{
+    padding-left: 10px;
+    font-size: 1.5rem;
+  }
+  .secLeft .head span{
+    font-size: 1.3rem;
+  }
+  .secLeft .middle{
+    font-size: 1rem;
+    height: 80px;
+  }
+  .secLeft button{
+    width:100px;
+    padding:0px;
+    height:40px;
+  }
+  .secLeft button a{
+    font-size: 1rem;
+  }
+  .secRight{
+    margin-left: 50px;
+  }
+  .secRight .hand{
+    max-width: 250px;
+  }
+  #livehead{
+    font-size: 1.4rem;
+  }
+  #livehead span{
+    font-size: 1.4rem;
+  }
+  .headi{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .headi span,.users .mains p,.testbody{
+    font-size: 1.3rem;
+  }
+  .cards p,.rev,.cards p span,.in1 p, .in2 p, .in3 p, .in4 p{
+    font-size: 1rem;
+  }
+  .leftcircle{
+    left:40px;
+  }
+  .in1, .in2, .in3, .in4{
+    height: 70px;
+  }
+ }
+ 

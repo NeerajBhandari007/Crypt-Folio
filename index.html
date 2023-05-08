@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/cf1.ico" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/65a7ddece6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Crypt-Folio Home</title>
+  </head>
+  <body>
+    <div calss="ani_page"><div class="main"></div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#main">Home</a>
+      <a href="./all.html">Market</a>
+      <a href="#wallet">Wallet</a>
+      <a href="#livehead">NFTs</a>
+      <a href="#headf">Contact Us</a>
+    </div>
+  <div class="cont">
+    <nav>
+      <p class="expand" onclick="openNav()">&#9776</p>
+      <p class="logo">CRYPT <span>FOLIO</span></p>
+      <ul>
+        <li><a href="#main">Home</a></li>
+        <li><a href="./all.html">Market</a></li>
+        <li><a href="#wallet">Wallet</a></li>
+        <li><a href="#livehead">NFTs</a></li>
+        <li><a href="#headf">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section class="middle">
+      <div class="secLeft" data-aos="fade-right">
+        <p class="head">Join the <span>Cryptocurrency</span> Revolution</p>
+        <p class="middle">
+          Discover the Power of Crypto Data: From Real-Time Prices and Market
+          Insights, to Detailed Currency Analysis and Investment Strategies,
+          Our Platform Has Everything You Need to Succeed in the World of
+          Cryptocurrency.
+        </p>
+        <button><a href="./sign.html">Get Started</a></button>
+      </div>
+      <div class="secRight" data-aos="fade-left">
+        <!-- blinking animation
+        <div class="over"></div> -->
+        <div class="coin">
+          <div class="divbit">
+            <img class="bit" src="./image/bitcoin.png" alt="bitcoin" />
+          </div>
+          <img class="lite" src="./image/lite.png" alt="binance" />
+          <img class="bin" src="./image/bin.png" alt="binance" />
+          <img class="eth" src="./image/eth.png" alt="ethereum" />
+          <img class="doge" src="./image/doge.png" alt="doge" />
+        </div>
+        <img class="hand" src="./image/hand.png" alt="hand" />
+      </div>
+    </section>
+  </div>
+  <div class="maincard">
+    <h1 class="mainchead">Streamline Your Global Investment Portfolio with <span>Automated Tracking</span> from Crypt Folio</h1>
+    <div class="firstcol">
+      <div class="first" data-aos="fade-right" data-aos-offset="320">
+        <p>
+          <i class="i fa-solid fa-users"></i>
+          <span>User-Friendly Interface:</span> Our platform offers a simple
+          and intuitive user interface that makes it easy for users of all
+          levels of experience to navigate and access the features they need.
+        </p>
+      </div>
+      <div class="second" data-aos="fade-left">
+        <p>
+          <i class="i fa-sharp fa-solid fa-coins"></i>
+          <span>Wide Range of Cryptocurrencies:</span> We offer a vast
+          selection of cryptocurrencies to trade and invest in, including the
+          most popular and well-established coins as well as emerging tokens.
+        </p>
+      </div>
+    </div>
+    <div class="seccol">
+      <div class="third" data-aos="fade-right">
+        <p>
+          <i class="i fa-solid fa-handshake"></i>
+          <span>Fast and Reliable Execution:</span> Our platform is built on
+          top of cutting-edge technology and infrastructure, ensuring fast and
+          reliable execution of your trades and orders, even during periods of
+          high volatility.
+        </p>
+      </div>
+      <div class="forth" data-aos="fade-left">
+        <p>
+          <i class="i fa-solid fa-user-shield"></i>
+          <span>Robust Security Measures:</span> We take security seriously
+          and have implemented multiple layers of security measures, including
+          two-factor authentication, cold storage, and encryption, to protect
+          our users' assets and information.
+        </p>
+      </div>
+    </div>
+  </div>
+  <p id="livehead">
+    Stay Informed with
+    <span style="color: rgb(0, 160, 112)">Real-Time</span> Crypto Data: Get
+    Ahead of the Curve with
+    <span style="color: rgb(0, 160, 112)">Crypt Folio</span>
+  </p>
+  <div class="live scroll-parent">
+    <div class="scroll-element primary">
+    </div>
+    <div class="scroll-element secondary">
+    </div>
+  </div>
+  <div id="chart">
+    <!-- <p>chart</p> -->
+    <table>
+      <thead>
+        <tr >
+          <th>Name</th>
+          <th>Price</th>
+          <th>24h%</th>
+          <th>Market Cap</th>
+          <th>Circulating Supply</th>
+        </tr>
+      </thead>
+      <tbody id="table_body" data-aos="fade-left" data-aos-duration="800" data-aos-offset="150">
+      </tbody>
+    </table>
+    <div id="loads"class="loader">Loading...</div>
+    <button class="more"><a href="./all.html">See More</a></button>
+  </div>
+  <div class="cards">
+    <div class="card1">
+      <h1
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom"
+        class="headi"
+        data-aos-offset="320"
+      >
+        Concept of
+        <span style="color: rgb(0, 160, 112)">crypto portfolio</span> and what
+        it entails?
+      </h1>
+      <p data-aos="fade-right" class="line">
+        A crypto portfolio is a collection of various digital assets such as
+        cryptocurrencies, tokens, and other blockchain-based assets that an
+        individual or organization holds as an investment. The aim of holding
+        a crypto portfolio is to gain a return on investment or to benefit
+        from long-term appreciation in value. Managing a crypto portfolio
+        entails the careful selection of assets, monitoring market trends and
+        changes, and making informed decisions about buying and selling
+        digital assets. The value of a crypto portfolio can fluctuate
+        significantly over time, so it is important to have a strategy and
+        stay informed about the latest developments in the crypto market.
+      </p>
+    </div>
+    <div class="card2">
+      <h1
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-bottom"
+        class="headi"
+        data-aos-offset="320"
+      >
+        What are the
+        <span style="color: rgb(0, 160, 112)">important factors</span> to
+        consider when selecting a portfolio for managing crypto investments?
+      </h1>
+      <div data-aos="fade-left" data-aos-offset="320">
+        <p class="state">
+          When looking for a good crypto portfolio, there are several key
+          factors to consider. These include:
+        </p>
+        <div class="points">
+          <p>
+            <span>Diversification:</span> A good portfolio should be well
+            diversified across different cryptocurrencies and other digital
+            assets. This helps to spread risk and reduce exposure to any
+            single asset.
+          </p>
+          <p>
+            <span>Risk management:</span> A good portfolio should also have a
+            risk management strategy in place. This could involve setting
+            stop-loss limits or regularly rebalancing the portfolio to
+            maintain a desired level of risk.
+          </p>
+          <p>
+            <span>Performance:</span> The performance of a portfolio is also a
+            key consideration. This involves tracking the overall return on
+            investment (ROI) and evaluating the performance of individual
+            assets within the portfolio.
+          </p>
+          <p>
+            <span>Accessibility:</span> A good portfolio should be easily
+            accessible and user-friendly. This means having a clear and
+            concise interface for monitoring and managing the portfolio, as
+            well as easy integration with different exchanges and wallets.
+          </p>
+          <p>
+            <span>Security:</span> Finally, security is paramount when it
+            comes to managing a crypto portfolio. This means ensuring that the
+            portfolio is protected by robust security measures such as
+            two-factor authentication, encryption, and regular backups.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="wallet">
+    <div class="leftcircle"></div>
+    <div class="left" data-aos="fade-right">
+      <p class="head">
+        Securely Store Your Cryptocurrency: Create Your Personal
+        <span style="color: rgb(0, 160, 112)">Crypto Wallet</span>
+        Today
+      </p>
+      <button><a href="./sign.html">Get Started</a></button>
+    </div>
+    <div class="rightcircle"></div>
+    <div class="wall" data-aos="fade-left">
+      <img class="phone" src="./image/p.png" alt="wallet" srcset="" />
+      <img
+        class="bit"
+        data-aos="zoom-in-up"
+        data-aos-offset="120"
+        src="./image/bitcoin.png"
+        alt=""
+        class="s"
+      />
+    </div>
+  </div>
+  <div class="userbox">
+    <div class="users">
+      <div class="mains"><p>Join Our <span>Global Community</span>: Crypt Folio Users Span Across 100+ Countries and Regions Worldwide</p></div>
+      <div class=outer>
+        <div class="o1">
+          <div class="in1">
+            <p>Daily trades on Crypt Folio</p>
+            <p class="money">100million+</p>
+          </div>
+          <div class="in2">
+            <p>Monthly trading volume</p>
+            <p class="money">$5B+</p>
+          </div>
+        </div>
+        <div class="o2">
+          <div class="in3">
+            <p>Has offered service for</p>
+            <p class="money">1400 days</p>
+          </div>
+          <div class="in4">
+            <p>Uptime</p>
+            <p class="money">99.99%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section class="section">
+    <div class="tleft"></div>
+    <div class="tright"></div>
+    <p class="test">Testimonial</p>
+    <p class="testbody">
+      See what people are saying about our crypto portfolio
+    </p>
+    <div class="wrapper">
+      <div class="carousel">
+        <div class="carousel__item">
+          <div class="carousel__item-head">🐳</div>
+          <div class="carousel__item-body">
+            <p>
+              "I've been using this platform for months now and I can honestly
+              say it's the best one out there. The user interface is easy to
+              navigate and the charts and data are always up-to-date. Highly
+              recommend!"<span> -- JohnDoe1987</span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__item-head">🐋</div>
+          <div class="carousel__item-body">
+            <p>
+              "I had a few questions about the security features on this
+              website and the customer support team was so helpful and
+              knowledgeable. They really went above and beyond to make sure I
+              was comfortable with using the platform. Thanks for the great
+              service!"
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__item-head">🐬</div>
+          <div class="carousel__item-body">
+            <p>
+              "As someone new to the world of cryptocurrency, I found this
+              platform to be really user-friendly and helpful. I was able to
+              create my own portfolio and start investing in no time.
+              Satisfied customer." <span>-- CryptoNewbie2021</span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__item-head">🐟</div>
+          <div class="carousel__item-body">
+            <p>
+              "The educational resources on this website are top-notch. They
+              really helped me understand the basics of crypto and how to make
+              informed investment decisions. Love it!"<span
+                >-- CryptoEnthusiast456</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__item-head">🐠</div>
+          <div class="carousel__item-body">
+            <p>
+              "I sleep better at night knowing my assets are secure on this
+              platform. The team takes security very seriously and I
+              appreciate the peace of mind it gives me. Thanks!"<span>
+                -- BitcoinHodler789</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__item-head">🐡</div>
+          <div class="carousel__item-body">
+            <p>
+              Sure, here's one more: "I've tried a few different crypto
+              portfolio websites in the past, but this one is by far the best.
+              I would highly recommend it to anyone looking to take their
+              crypto portfolio to the next level."<span>
+                -- CryptoTrader99</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__item-head">🐟</div>
+          <div class="carousel__item-body">
+            <p>
+              "The educational resources on this website are top-notch. They
+              really helped me understand the basics of crypto and how to make
+              informed investment decisions. Love it!"<span
+                >-- CryptoEnthusiast456</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__item-head">🐠</div>
+          <div class="carousel__item-body">
+            <p>
+              "I sleep better at night knowing my assets are secure on this
+              platform. The team takes security very seriously and I
+              appreciate the peace of mind it gives me. Thanks!"<span>
+                -- BitcoinHodler789</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__item-head">🐡</div>
+          <div class="carousel__item-body">
+            <p>
+              Sure, here's one more: "I've tried a few different crypto
+              portfolio websites in the past, but this one is by far the best.
+              I would highly recommend it to anyone looking to take their
+              crypto portfolio to the next level."<span>
+                -- CryptoTrader99</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="phoner">
+    <div class="fl"><div class="rev rev1">"I sleep better at night knowing my assets are secure on this
+      platform. The team takes security very seriously. Thanks!"<span>
+        -- BitcoinHodler789</span
+      ></div></div>
+    <div class="fl"><div class="rev rev2">"The educational resources on this website are top-notch. They
+      really helped me understand the basics of crypto. Love it!"<span
+        >-- CryptoEnthusiast456</span
+      ></div></div>
+    <div class="fl"> <div class="rev rev1">"I've been using this platform for months now and I can honestly
+      say it's the best one out there. Highly
+      recommend!"<span> -- JohnDoe1987</span></div>
+    </div>
+    <div class="fl">
+      <div class="rev rev2">"I had a few questions about the security features on this
+        website and the customer support team was so helpful and
+        knowledgeable.Thanks for the great
+        service!"
+        <span> --CryptoGuru23</span></div></div>
+  </section>
+  <footer>
+    <p id="headf">Stay in Touch</p>
+    <div class="email">
+      <div class="etitle">
+        <i class="efoot fa-solid fa-envelope"></i><p>Mail Us</p><i
+          class="efoot fa-solid fa-arrow-right"
+        ></i>
+      </div>
+      <div class="ebox">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Enter Name">
+          <input type="text" name="Email" placeholder="Enter Email">
+          <textarea name="Message" placeholder="Enter Your Message"></textarea>
+          <button type="submit" class="bfoot">Send</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+    <div class="icon">
+      <i class="down fa-brands fa-twitter"></i>
+      <i class="down fa-brands fa-reddit"></i>
+      <i class="down fa-brands fa-instagram"></i>
+      <i class="down fa-brands fa-facebook"></i>
+      <i class="down fa-brands fa-discord"></i>
+      <i class="down fa-brands fa-linkedin"></i>
+    </div>
+    <div class="last">
+      <p class="lasthead">Crypt Folio</p>
+      <p class="lastpara">
+        "At Crypt Folio, we go beyond just tracking prices, volumes, and
+        market capitalizations. Our platform provides a comprehensive analysis
+        of the crypto market, including community growth, open-source code
+        development, major events, and on-chain metrics. With our fundamental
+        analysis tools, you can get a more complete picture of the market and
+        make informed investment decisions."
+      </p>
+      <p class="lastp">© 2023 CryptFolio. All Rights Reserved.</p>
+    </div>
+  </footer></div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
+    <script src="./js/index.js"></script>
+    <form name="submit-to-google-sheet">
+
+    </form>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxJVDuktXfI1jIC6c_gKI4CfpKFn-CXzXFCdHEFkbff4UoyNz-QqZLEZDuGSCn29vKrfw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML=""
+            },2000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
