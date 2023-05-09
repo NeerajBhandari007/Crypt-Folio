@@ -37,7 +37,7 @@ function da(curr, pa) {
         colo.forEach(setcolo);
       }, 0000);
       function setcolo(cc) {
-        if (cc.innerText.substring(0, 4) >= 0) {
+        if (cc.innerText.substring(0, 6) >= 0) {
           cc.style.color = "green";
         } else {
           cc.style.color = "red";
