@@ -133,10 +133,10 @@ nav ul a:hover {
 .secRight .hand {
   max-width: 90%;
   position: absolute;
-  margin-top: 240px;
+  margin-top: 200px;
   margin-left: 130px;
   float: right;
-  width: 580px;
+  width: 650px;
   max-height: 650px;
   z-index: 2;
 }
