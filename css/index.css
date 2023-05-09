@@ -2148,7 +2148,7 @@ a {
     margin: 0px;
     font-size: 1.98rem;
 
-    padding-left: 70px;
+    padding-left: 80px;
     z-index: 1;
     color: white;
   }
@@ -2158,7 +2158,6 @@ a {
   .logo span {
     font-size: 1.8rem;
   }
-
   .expand {
     display: block;
     color: black;
@@ -2245,13 +2244,16 @@ a {
     font-size: 1.1rem;
   }
 }
- @media only screen and (max-width: 376px) {
+ @media only screen and (max-width: 386px) {
   .main{
-    width:365px
+    width:398px
   }
   nav .logo{
     font-size: 1.4rem;
-    padding-left: 60px;
+    padding-left: 100px;
+  }
+  .leftcircle{
+    left:45px;
   }
   nav .logo span{
     font-size: 1.4rem;
@@ -2285,7 +2287,8 @@ a {
     margin-left: 50px;
   }
   .secRight .hand{
-    max-width: 250px;
+    max-width: 300px;
+    margin-left: 10px;
   }
   #livehead{
     font-size: 1.4rem;
@@ -2303,11 +2306,65 @@ a {
   .cards p,.rev,.cards p span,.in1 p, .in2 p, .in3 p, .in4 p{
     font-size: 1rem;
   }
-  .leftcircle{
-    left:40px;
-  }
   .in1, .in2, .in3, .in4{
     height: 70px;
   }
  }
- 
+ @media only screen and (max-width: 356px) {
+  .main{
+    width:385px
+  }
+  nav .logo{
+    padding-left: 80px;
+  }
+ }
+
+ @media only screen and (max-width: 335px){
+  .main{
+    width:365px
+  }
+  .secRight .hand{
+    max-width: 300px;
+    margin-left: 0px;
+  }
+  .secRight{
+    width: 100%;
+    margin-left: 30px;
+  }
+ }
+ @media only screen and (max-width: 331px) {
+  .main{
+    width:355px;
+    margin-left: 10px;
+  }
+ }
+ @media only screen and (max-width: 326px){
+  .main{
+    width:325px;
+  }
+ }
+ @media only screen and (max-width: 300px){
+  .main{
+    width:320px
+  }
+ }
+ @media only screen and (max-width: 290px){
+  .main{
+    width:300px
+  }
+  .secRight .hand{
+    max-width: 250px;
+    margin-left: 0px;
+  }
+  .secRight{
+    margin-left: 10px;
+  }
+  .leftcircle{
+    left: 10px;
+  }
+ }
+ @media only screen and (max-width: 275px){
+  .main{
+    width:295px
+  }
+ }
