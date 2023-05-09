@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="price">&#8377 ${
                 datas.market_data.current_price.inr
               }<span id="tfh" class="per"> ${datas.market_data.price_change_percentage_24h_in_currency.inr.toFixed(
-          2
+          4
         )}%</span></div>
               <div class="coin_info">
                   <div><p class="p1">Market Cap:</p><p class="p2">${
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ca(id, day);
     function setcolo() {
       const cc = document.querySelector("#tfh");
-      if (datas.market_data.price_change_percentage_24h_in_currency.inr >= 0) {
+      if (cc.innerText.substring(0, 4) >= 0) {
         cc.style.color = "green";
       } else {
         cc.style.color = "red";
