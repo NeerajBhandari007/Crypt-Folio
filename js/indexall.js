@@ -43,7 +43,7 @@ function da(curr, pa) {
           cc.style.color = "red";
         }
       }
-      document.getElementById("loads").style.display="none"; 
+      document.querySelector(".load_main").style.display="none"; 
     }); 
 }
 da(curr, pa);
