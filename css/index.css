@@ -2167,6 +2167,9 @@ a {
     width: 40px;
     padding-left: 20px;
   }
+  .cexpand{
+    color: white;
+  }
   .sidenav {
     display: block;
     height: 0;
