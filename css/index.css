@@ -133,11 +133,11 @@ nav ul a:hover {
 .secRight .hand {
   max-width: 90%;
   position: absolute;
-  margin-top: 200px;
-  margin-left: 130px;
+  margin-top: 230px;
+  margin-left: 120px;
   float: right;
-  width: 650px;
-  max-height: 650px;
+  width: 640px;
+  height: 450px;
   z-index: 2;
 }
 .coin {
@@ -1372,7 +1372,7 @@ a {
   }
   .secRight .hand {
     max-width: 690px;
-    height: 380px;
+    height: 420px;
     margin-top: 250px;
     left: 0px;
   }
