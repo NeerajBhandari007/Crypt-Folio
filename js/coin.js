@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ca(id, day);
     function setcolo() {
       const cc = document.querySelector("#tfh");
-      if (cc.innerText.substring(0, 6) >= 0) {
+      if (datas.market_data.price_change_percentage_24h_in_currency.inr >= 0) {
         cc.style.color = "green";
       } else {
         cc.style.color = "red";
