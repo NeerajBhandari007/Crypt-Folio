@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }<span> ${datas.symbol.toUpperCase()}</span></div>
               <div class="price">&#8377 ${
                 datas.market_data.current_price.inr
-              }<span class="per"> ${datas.market_data.price_change_percentage_24h_in_currency.inr.toFixed(
+              }<span id="tfh" class="per"> ${datas.market_data.price_change_percentage_24h_in_currency.inr.toFixed(
           2
         )}%</span></div>
               <div class="coin_info">
@@ -138,6 +138,15 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("main_coin").innerHTML = tabledata;
 
         ca(id, day);
+    function setcolo() {
+      const cc = document.querySelector("#tfh");
+      if (cc.innerText.substring(0, 6) >= 0) {
+        cc.style.color = "green";
+      } else {
+        cc.style.color = "red";
+      }
+    }
+      setcolo();
         setTimeout(() => {
           let one = document.querySelector(".one");
           let three = document.querySelector(".three");
