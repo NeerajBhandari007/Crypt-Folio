@@ -305,13 +305,15 @@ footer a {
 	h1{
 		font-size: 1.4rem;
 	}
-}
-@media only screen and (max-width: 400px) {
 	.sig{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-bottom:70px;
 	}
+}
+@media only screen and (max-width: 400px) {
+	
 	.container{
 		width: 300px;
 		min-height:400px;
