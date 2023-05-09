@@ -1,9 +1,11 @@
 
+body, html{
+	margin: 0px;
+	padding: 0px;
+}
 
 * {
 	box-sizing: border-box;
-	padding: 0px;
-        margin: 0px;
 }
 *::-webkit-scrollbar {
 	display: none;
@@ -13,7 +15,6 @@
 	-ms-overflow-style: none;  
 	scrollbar-width: none;
   }
-  
 .sigbox{
 	background: #f6f5f7;
 	display: flex;
@@ -305,15 +306,13 @@ footer a {
 	h1{
 		font-size: 1.4rem;
 	}
+}
+@media only screen and (max-width: 400px) {
 	.sig{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom:80px;
 	}
-}
-@media only screen and (max-width: 400px) {
-	
 	.container{
 		width: 300px;
 		min-height:400px;
@@ -347,5 +346,15 @@ footer a {
 	}
 	a{
 		font-size: 0.7rem;
+	}
+}
+@media only screen and (max-width: 376px){
+	.container{
+		width: 290px;
+		min-height:400px;
+	}
+	.cloit{
+
+		width: 250px;
 	}
 }
