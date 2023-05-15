@@ -125,6 +125,9 @@ nav ul a:hover {
   background-color: rgb(0, 160, 112);
   color: white;
 }
+.left .head{
+  max-width:450px;
+}
 .secRight {
   position: relative;
   max-width: 50%;
