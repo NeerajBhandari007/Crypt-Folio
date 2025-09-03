@@ -166,7 +166,7 @@ nav ul a:hover {
   top: 175px;
   left: 120px;
   /* animation: upbit 3s linear 2.2s 1 normal, bitcoin 4s linear 4.8s infinite; */
-  animation: bitcoin 4s linear infinite;
+  /* animation: bitcoin 4s linear infinite; */
   z-index: 2;
 }
 .secRight .eth {
@@ -176,7 +176,7 @@ nav ul a:hover {
   top: 90px;
   left: 300px;
   /* animation: upe 3s linear 2.2s 1 normal, ethereum 4s linear 4.8s infinite; */
-  animation: ethereum 4s linear infinite;
+  /* animation: ethereum 4s linear infinite; */
   z-index: 2;
 }
 .secRight .bin {
@@ -186,7 +186,7 @@ nav ul a:hover {
   top: 100px;
   left: 210px;
   /* animation: upb 3s linear 2.2s 1 normal, binance 4s linear 4.8s infinite; */
-  animation: binance 4s linear infinite;
+  /* animation: binance 4s linear infinite; */
   z-index: 2;
 }
 .secRight .lite {
@@ -196,7 +196,7 @@ nav ul a:hover {
   top: 290px;
   left: 240px;
   /* animation: upl 3s linear 2.2s 1 normal, lite 4s linear 4.8s infinite; */
-  animation: lite 4s linear infinite;
+  /* animation: lite 4s linear infinite; */
   z-index: 2;
 }
 .secRight .doge {
@@ -206,7 +206,7 @@ nav ul a:hover {
   top: 250px;
   left: 330px;
   /* animation: upd 3s linear 2.2s 1 normal, doge 4s linear 4.8s infinite; */
-  animation: doge 4s linear infinite;
+  /* animation: doge 4s linear infinite; */
   z-index: 2;
 }
 @keyframes lite {
@@ -528,7 +528,7 @@ p span {
   position: absolute;
   left: 0%;
   top: 0%;
-  animation: primary 15s linear infinite;
+  /* animation: primary 15s linear infinite; */
 }
 .topcard {
   width: 20%;
@@ -538,12 +538,12 @@ p span {
   align-items: center;
 }
 .primary {
-  animation: primary 15s linear infinite;
+  /* animation: primary 15s linear infinite; */
 }
 
-.secondary {
+/* .secondary {
   animation: secondary 15s linear infinite;
-}
+} */
 
 @keyframes primary {
   from {
@@ -899,11 +899,11 @@ table tr.slide-in {
   position: absolute;
   width: 90%;
   padding: 0 12px;
-  opacity: 0;
+  opacity: 1;
   filter: drop-shadow(0 2px 2px #555);
   will-change: transform, opacity;
-  -webkit-animation: carousel-animate-vertical 27s linear infinite;
-  animation: carousel-animate-vertical 27s linear infinite;
+  /* -webkit-animation: carousel-animate-vertical 27s linear infinite; */
+  /* animation: carousel-animate-vertical 27s linear infinite; */
 }
 
 .carousel__item:nth-child(1) {
@@ -2094,7 +2094,7 @@ a {
     width: 53px;
     top: 100px;
     left: 155px;
-    animation: lite 4s linear infinite;
+    /* animation: lite 4s linear infinite; */
   }
   .secRight{
     margin-left: 70px;

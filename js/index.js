@@ -75,7 +75,7 @@ fetch(
         </div>`;
     });
     document.querySelector(".primary").innerHTML = data;
-    document.querySelector(".secondary").innerHTML = data;
+    // document.querySelector(".secondary").innerHTML = data;
   });
 
 
